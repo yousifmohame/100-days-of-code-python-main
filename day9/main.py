@@ -1,5 +1,5 @@
 # =============== Day 9 ===============
-from art import logo
+# from art import logo
 # Grading Program
 # You have access to a database of student_scores in the format of a dictionary.
 # The keys in student_scores are the names of the students and the values are their exam scores. 
@@ -55,23 +55,23 @@ from art import logo
 # }
 
 # print(travel_log["France"]["cities_visited"][2])
-print(logo)
-restart = True
-max_num = 0
-bidding = {}
-while restart :
-    user_name = input("What is your name?: ").lower()
-    bid_num = int(input("What is your bid?: $ "))
-    new_bid = input("Are there any other bidders? Type 'yes or 'no'. \n").lower()
-    bidding[user_name] = bid_num
-    if new_bid == "no" :  
-        for bid in bidding:
-            price = bidding[bid]
-            if price >= max_num :
-                max_num = price
-                win_name = bid
-        restart = False
-    else :
-        print("\n" * 100)
+# print(logo)
+# restart = True
+# max_num = 0
+# bidding = {}
+# while restart :
+#     user_name = input("What is your name?: ").lower()
+#     bid_num = int(input("What is your bid?: $ "))
+#     new_bid = input("Are there any other bidders? Type 'yes or 'no'. \n").lower()
+#     bidding[user_name] = bid_num
+#     if new_bid == "no" :  
+#         for bid in bidding:
+#             price = bidding[bid]
+#             if price >= max_num :
+#                 max_num = price
+#                 win_name = bid
+#         restart = False
+#     else :
+#         print("\n" * 100)
 
-print(f"The winner is {win_name} with a bid of ${max_num}")
+# print(f"The winner is {win_name} with a bid of ${max_num}")
